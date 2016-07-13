@@ -9,6 +9,7 @@
         <meta name="description" content="Example 4 column layout of using CSS only for masonry / isotope style layout with Bootstrap panels." />
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/featherlight.css" rel="stylesheet">
+        <link href="css/tether.min.css" rel="stylesheet">
         <!-- <link href="css/featherlight.gallery.css" rel="stylesheet"> -->
         <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -158,24 +159,35 @@
             </div>
         </div>
         <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+        <script src="js/umd/tether.min.js"></script><!-- Tether for Bootstrap --> 
         <!-- <script type='text/javascript' src="js/umd/featherlight.gallery.js"></script> -->
         <script type='text/javascript' src="js/umd/featherlight.js"></script>
-        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+        
         <!-- JavaScript jQuery code from Bootply.com editor  -->
         <script type='text/javascript'>
         $(document).ready(function() {
         });
         </script>
         <script type="text/javascript">
-        	//$(document).ready(function(){
-        		// $('.gallery').featherlightGallery();
-                // $('.img-holder a img').on('load',function() {
-                //     var imgPath = $(this).attr('src');
+        	// $(document).ready(function(){
+        	// 	//$('.gallery').featherlightGallery();
+         //        $('.img-holder a img').each(function() {
+         //            var imgPath = $(this).attr('src');
 
-                //     $('.img-holder a').attr('href', imgPath);
-                // });
-        	//});
-
+         //            $('.img-holder a').attr('href', imgPath);
+         //        });
+        	// });
+            //$(document).ready(function() {
+              // $('.img-holder').each(function() {
+              //   var imgURL = $('.img-holder a img').attr('src');
+              //   $(this).css('background-image', 'url(' + imgURL + ')');
+              // });
+              $('img-holder').on('click', function(){
+                var imgURL = $('.img-holder a img').attr('src');
+                alert(imgURL);
+              });
+            //});
         	// function equalHeight(group) {
         	//     tallest = 0;
         	//     group.each(function() {
