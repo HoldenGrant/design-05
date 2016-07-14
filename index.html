@@ -12,9 +12,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
         <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
         <link href="css/featherlight.css" rel="stylesheet">
-        <link href="css/sss.css" rel="stylesheet">
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/slick-theme.css" rel="stylesheet">
         <!-- <link href="css/tether.min.css" rel="stylesheet"> -->
         <!-- <link href="css/featherlight.gallery.css" rel="stylesheet"> -->
         <!--[if lt IE 9]>
@@ -45,17 +46,31 @@
                 text-align: center;
                 background: rgba(0, 0, 0, 0.18);
             }
+            /* menu start */
             .holden-menu {
                 margin-top: -51px;
             }
+            .main-menu-container {
+                position: relative;
+                background: antiquewhite;
+            }
+            .main-menu-container .holden-menu .navbar {
+                margin-bottom: 0;
+                border-radius: 0px;
+            }
+            .main-menu-container .holden-menu .navbar-default {
+                border-color: transparent;
+            }
+            /* menu end */
             .slider{
                 /*border-top: 5px solid #8c7669;*/
                 position: relative;
             }
             .slider, .slider .sss, .slider .sss .ssslide {
-                width: 100%;
-                height: 100%;
+                /*width: 100%;
+                height: 100%;*/
                 /*position: relative;*/
+                overflow: hidden;
             }
 
         </style>
@@ -69,43 +84,48 @@
         </div>
         <!-- slider start-->
         <div class="slider">
-            <div class="" style="background-image:url('photo-1447653880973-a426557098a9.jpg'); background-size:cover; background-position:center;">
-                <!-- <img src="72adf455.jpg" /> -->
+            <div class="" style="background-image:url(''); background-size:cover; background-position:center;">
+                <img src="photography/brush-painting-paint-brushes-8133.jpg" alt="" class="img-responsive"/>
             </div>
-            <div class="" style="background-image:url('72adf455.jpg'); background-size:cover; background-position:center;">
-                <!-- <img src="cWT6BHfQDW5yDoN1qgn0_DSC06383.jpg" /> -->
+            <div class="" style="background-image:url(''); background-size:cover; background-position:center;">
+                <img src="drawing/pexels-photo.jpg" alt="" class="img-responsive"/>
             </div>
-            <!-- <div class="" style="background-image:url('palm-trees.jpg'); background-size:cover; background-position:center;">
-            </div> -->
+            <div class="" style="background-image:url(''); background-size:cover; background-position:center;">
+                <img src="street/photo-1465805466987-1a52c4976a92.jpg" alt="" class="img-responsive"/>
+            </div>
+            <div class="" style="background-image:url(''); background-size:cover; background-position:center;">
+                <img src="paper/pexels-photo-68558.jpeg" alt="" class="img-responsive"/>
+            </div>
             <!-- <div class="just_text">This one's just text.</div> -->
-
-
             <!-- <div><img src="3b6f33f2.jpg" /><span class="caption">This one has a caption</span></div> -->
         </div>
         <!-- slider end -->
         <!-- nav start -->
-        <div class="container holden-menu">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+        <section class="main-menu-container">
+            <div class="container holden-menu">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        <a class="navbar-brand" href="#">Project name</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">About Me</a></li>
+                                <li><a href="#">Contact Me</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">Contact Me</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+                </nav>
+            </div>
+        </section>
+
         <!-- nav end -->
         <div class="container">
             <h1>Masonry CSS with Bootstrap  3</h1>
@@ -246,17 +266,32 @@
         <!-- <script src="js/umd/tether.min.js"></script>Tether for Bootstrap -->
         <!-- <script type='text/javascript' src="js/umd/featherlight.gallery.js"></script> -->
         <script type='text/javascript' src="js/umd/featherlight.js"></script>
-        <script type='text/javascript' src="js/umd/sss.min.js"></script>
+        <script type='text/javascript' src="js/umd/slick.js"></script>
 
         <!-- JavaScript jQuery code from Bootply.com editor  -->
         <script type='text/javascript'>
-        $('.slider').sss({
-        // slideShow : true, // Set to false to prevent SSS from automatically animating.
-        // startOn : 0, // Slide to display first. Uses array notation (0 = first slide).
-        // transition : 400, // Length (in milliseconds) of the fade transition.
-        // speed : 3500, // Slideshow speed in milliseconds.
-        // showNav : true // Set to false to hide navigation arrows.
-        });
+
+
+            $(".slider").slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                //dots: true,
+                responsive: [{
+                    breakpoint: 500,
+                    settings: {
+                        dots: false,
+                        arrows: false,
+                        infinite: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }]
+            });
+
         $(document).ready(function() {
         });
         </script>
