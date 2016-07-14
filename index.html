@@ -336,12 +336,12 @@
         });
         </script>
         <script type="text/javascript">
-         $(window).load(function(){
-                //$('.img-holder a img').load('index.html',function() {
+         $(document).ready(function(){
+                $('.img-holder a img').hover(function() {
                     var imgPath = $(this).attr('src');
                     //alert(imgPath);
                     $(this).attr('data-featherlight', imgPath);
-               // });
+               });
         });
         </script>
     </body>
