@@ -26,13 +26,13 @@
         <style type="text/css">
             *, *:before, *:after {box-sizing:  border-box !important;}
             .row { -moz-column-width: 20em; -webkit-column-width: 20em; -moz-column-gap: 4px; -webkit-column-gap:4px; }
-            .row > .col-md-3 { display: inline-block; padding: 0; margin: 0; width:  100%; float:none; }
+            .row > .img-holder { display: inline-block; padding: 0; margin: 0; width:  100%; float:none; }
             .img-responsive { border:0px solid #999; width: 100%; }
         </style>
     </head>
     <!-- HTML code from Bootply.com editor -->
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -46,19 +46,20 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="./">Home <span class="sr-only">(current)</span></a></li>
-                            <li><a href="../navbar-static-top/">About Me</a></li>
-                            <li><a href="../navbar-fixed-top/">Contact Me</a></li>
+                            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Contact Me</a></li>
                         </ul>
-                    </div><!--/.nav-collapse -->
-                </div><!--/.container-fluid -->
+                    </div>
+                </div>
             </nav>
         </div>
-        <div class="container">
+
+        <div class="container-fluid">
             <h1>Masonry CSS with Bootstrap  3</h1>
             <h3>images from unsplash.com</h3>
             <div class="row">
-                <div class="col-md-3 card img-holder">
+                <div class="col-md-4 card img-holder">
                     <a href=" ">
                         <img src="photo-1465441494912-68f5747c3fe0.jpg" class="img-responsive" data-featherlight="">
                     </a>
