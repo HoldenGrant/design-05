@@ -180,7 +180,7 @@
         <script type="text/javascript">
          $(document).ready(function(){
         	// 	//$('.gallery').featherlightGallery();
-                $('.img-holder a img').each(function() {
+                $('.img-holder a img').load('index.html',function() {
                     var imgPath = $(this).attr('src');
                     //alert(imgPath);
                     $(this).attr('data-featherlight', imgPath);
