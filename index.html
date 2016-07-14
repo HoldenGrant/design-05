@@ -181,8 +181,8 @@
          $(document).ready(function(){
         	// 	//$('.gallery').featherlightGallery();
                 $('.img-holder a img').each(function() {
-                    var imgPath = $('.img-holder a img').attr('src');
-                    //alert(imgPath); 
+                    var imgPath = $(this).attr('src');
+                    //alert(imgPath);
                     $(this).attr('data-featherlight', imgPath);
                 });
         });
