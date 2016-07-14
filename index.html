@@ -67,7 +67,7 @@
                 /*border-top: 5px solid #8c7669;*/
                 position: relative;
             }
-            .slider, .slider .sss, .slider .sss .ssslide {
+            .slider{
                 width: 100%;
                 height: 95%;
                 /*position: relative;*/
@@ -76,8 +76,35 @@
             .slider .slick-slide img{
                  transform: scale(1);
                 transform-origin: center;
+                /*height: 100%;*/
             }
-
+            .slider .slick-list, .slider .slick-list .slick-track{
+                 height: 100%;
+            }
+            @media (max-width:725px){
+                 .slider .slick-slide img {
+                  transform: scale(1.5);
+              }
+              .slider .slick-slide{
+                   overflow: hidden;
+              }
+            }
+            @media (max-width:602px){
+                 .slider .slick-slide img {
+                  transform: scale(2);
+              }
+            }
+            @media (max-width:499px){
+                 .slider .slick-slide img {
+                   transform: scale(5);
+               }
+               .slider .slick-slide{
+                    overflow: hidden;
+               }
+               .slider {
+                   height: 100%;
+               }
+            }
         </style>
     </head>
     <!-- HTML code from Bootply.com editor -->
@@ -272,7 +299,15 @@
         <!-- <script type='text/javascript' src="js/umd/featherlight.gallery.js"></script> -->
         <script type='text/javascript' src="js/umd/featherlight.js"></script>
         <script type='text/javascript' src="js/umd/slick.js"></script>
-
+        <script type='text/javascript' src="js/umd/nanobar.min.js"></script>
+        <script>
+			var simplebar = new Nanobar();
+			simplebar.go(100);
+      var colorbar = new Nanobar({target: document.getElementById('color')});
+			colorbar.go(100);
+      var centeredbar = new Nanobar({target: document.getElementById('centered')});
+			centeredbar.go(100);
+		</script>
         <!-- JavaScript jQuery code from Bootply.com editor  -->
         <script type='text/javascript'>
 
@@ -281,8 +316,8 @@
                 dots: true,
                 infinite: true,
                 speed: 500,
-                fade: true,
-                cssEase: 'linear',
+                //fade: true,
+                //cssEase: 'linear',
                 autoplay: true,
                 //dots: true,
                 responsive: [{
@@ -291,8 +326,8 @@
                         dots: false,
                         arrows: false,
                         infinite: false,
-                        slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToShow: 1,
+                        slidesToScroll: 1
                     }
                 }]
             });
