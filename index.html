@@ -31,7 +31,7 @@
     <!-- HTML code from Bootply.com editor -->
     <body>
         <div class="brand-logo">
-            <a href="#">
+            <a href="#menu-menu">
                 LOREM IPSUM
             </a>
         </div>
@@ -54,8 +54,8 @@
         </div>
         <!-- slider end -->
         <!-- nav start -->
-        <section class="main-menu-container">
-            <div class="container holden-menu">
+        <section class="main-menu-container" id="startchange">
+            <div class="container holden-menu" id="menu-menu">
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
@@ -96,7 +96,10 @@
             <h1>Masonry CSS</h1>
             <h6>images from unsplash.com</h6>
             <div class="row">
-                <div class="col-md-4 card img-holder">
+                 <div class="col-sm-3 col-xs-12">
+                      <h1>Cat. Title</h1>
+                 </div>
+                <div class="col-md-3 card img-holder">
                     <a href=" ">
                         <img src="samples/photo-1465441494912-68f5747c3fe0.jpg" class="img-responsive" data-featherlight="">
                     </a>
@@ -131,11 +134,6 @@
                         <img src="samples/P_20151210_085929_HDR.jpg" class="img-responsive" data-featherlight=" ">
                     </a>
                 </div>
-                <!-- <div class="col-md-3 card img-holder">
-                    <a href=" ">
-                        <img src="photo-1467173572719-f14b9fb86e5f.jpg" class="img-responsive" data-featherlight=" ">
-                    </a>
-                </div> -->
                 <div class="col-md-3 card img-holder">
                     <a href=" ">
                         <img src="samples/photo-1467348733814-f93fc480bec6.jpg" class="img-responsive" data-featherlight=" ">
@@ -161,11 +159,6 @@
                         <img src="samples/photo-1467348733814-f93fc480bec6.jpg" class="img-responsive" data-featherlight=" ">
                     </a>
                 </div>
-                <!-- <div class="col-md-3 card img-holder">
-                    <a href=" ">
-                        <img src="photo-1467094568967-95f87ee9c873.jpg" class="img-responsive" data-featherlight=" ">
-                    </a>
-                </div> -->
                 <div class="col-md-3 card img-holder">
                     <a href=" ">
                         <img src="samples/pexels-photo.jpg" class="img-responsive" data-featherlight=" ">
@@ -176,51 +169,6 @@
                         <img src="samples/photo-1460186136353-977e9d6085a1.jpg" class="img-responsive" data-featherlight=" ">
                     </a>
                 </div>
-                <!-- <div class="col-md-3 card">
-                    <a href="photo-1458571037713-913d8b481dc6.jpg">
-                        <img src="photo-1458571037713-913d8b481dc6.jpg" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-md-3 card">
-                    <a href="photo-1446040945968-d303ecb10b4d.jpg">
-                        <img src="photo-1446040945968-d303ecb10b4d.jpg" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-md-3 card">
-                    <a href="photo-1445098693232-134135a7ccfa.jpg">
-                        <img src="photo-1445098693232-134135a7ccfa.jpg" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-md-3 card">
-                    <a href="photo-1445052858312-134745f190f2.jpg">
-                        <img src="photo-1445052858312-134745f190f2.jpg" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-md-3 card">
-                    <a href="palm-trees.jpg">
-                        <img src="palm-trees.jpg" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-md-3 card">
-                    <a href="cWT6BHfQDW5yDoN1qgn0_DSC06383.jpg">
-                        <img src="cWT6BHfQDW5yDoN1qgn0_DSC06383.jpg" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-md-3 card">
-                    <a href="72adf455.jpg">
-                        <img src="72adf455.jpg" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-md-3 card">
-                    <a href="3b6f33f2.jpg">
-                        <img src="3b6f33f2.jpg" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-md-3 card">
-                    <a href="palm-trees.jpg">
-                        <img src="palm-trees.jpg" class="img-responsive">
-                    </a>
-                </div> -->
             </div>
         </div>
         <script type='text/javascript' src="js/jquery.min.js"></script>
@@ -270,6 +218,7 @@
         });
         </script>
         <script type="text/javascript">
+     //    featherlight
          $(document).ready(function(){
                 $('.img-holder a img').hover(function() {
                     var imgPath = $(this).attr('src');
@@ -277,6 +226,42 @@
                     $(this).attr('data-featherlight', imgPath);
                });
         });
+
+     //    smooth scrolling
+     $('a[href^=#]').on("click",function(){
+         var t= $(this.hash);
+         var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
+         if(t.length){
+             var tOffset=t.offset().top;
+             $('html,body').animate({scrollTop:tOffset-20},'slow');
+             return false;
+         }
+     });
+
+     // change on scroll
+     $(document).ready(function(){
+        var scroll_start = 0;
+        var startchange = $('#startchange');
+        var offset = startchange.offset();
+         if (startchange.length){
+        $(document).scroll(function() {
+           scroll_start = $(this).scrollTop();
+           if(scroll_start > offset.top) {
+               $(".main-menu-container").css({'position':'absolute','top':'0'});
+               $('.main-menu-container > .holden-menu').css({'margin-top':'0'});
+               //alert("on");
+            } else {
+               //$('#gototopbtn').css('visibility', 'hidden');
+               //alert("off");
+               $(".main-menu-container").css('position', 'static');
+               $('.main-menu-container > .holden-menu').css({'margin-top':'51px'});
+
+            }
+        });
+         }
+     });
+
+
         </script>
     </body>
 </html>
