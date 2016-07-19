@@ -21,11 +21,20 @@ body{
 }
 /* menu start */
 .holden-menu {
-    margin-top: -51px;
+    /*margin-top: -51px;*/
 }
 .main-menu-container {
     position: relative;
     background: white;
+    margin-top: -51px;
+    width: 100%
+}
+.top-menu-container{
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    z-index: 2;
+    box-shadow: 1px 1px 15px 3px rgba(16, 16, 16, 0.71);
 }
 .main-menu-container .holden-menu .navbar {
     margin-bottom: 0;

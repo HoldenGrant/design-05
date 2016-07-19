@@ -238,30 +238,22 @@
          }
      });
 
-     // change on scroll
-    //  $(document).ready(function(){
-    //     var scroll_start = 0;
-    //     var startchange = $('#startchange');
-    //     var offset = startchange.offset();
-    //      if (startchange.length){
-    //     $(document).scroll(function() {
-    //        scroll_start = $(this).scrollTop();
-    //        if(scroll_start > offset.top) {
-    //            $(".main-menu-container").css({'position':'absolute','top':'0'});
-    //            $('.main-menu-container > .holden-menu').css({'margin-top':'0'});
-    //            //alert("on");
-    //         } else {
-    //            //$('#gototopbtn').css('visibility', 'hidden');
-    //            //alert("off");
-    //            $(".main-menu-container").css('position', 'static');
-    //            $('.main-menu-container > .holden-menu').css({'margin-top':'51px'});
-     //
-    //         }
-    //     });
-    //      }
-    //  });
-
-
+    // change on scroll
+    $(document).ready(function(){
+        var scroll_start = 0;
+        var startchange = $('#startchange');
+        var offset = startchange.offset();
+        if (startchange.length){
+            $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                    $(".main-menu-container").addClass('top-menu-container');
+                } else {
+                    $(".main-menu-container").removeClass('top-menu-container');
+                }
+            });
+        }
+    });
         </script>
     </body>
 </html>
