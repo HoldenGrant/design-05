@@ -1,3 +1,11 @@
+//progress-bar
+var simplebar = new Nanobar();
+simplebar.go(100);
+var colorbar = new Nanobar({target: document.getElementById('color')});
+colorbar.go(100);
+var centeredbar = new Nanobar({target: document.getElementById('centered')});
+centeredbar.go(100);
+
 // slider
 $(".slider").slick({
      lazyLoad: 'ondemand',
