@@ -9,7 +9,7 @@ html, body{
         z-index: 0;
 }
 body{
-    border-top: 5px solid #8c7669;
+    /*border-top: 5px solid #8c7669;*/
 }
 /* translusent top bar start */
 .site-intro {
