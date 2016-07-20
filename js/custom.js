@@ -1,3 +1,11 @@
+//featherlight
+$(document).ready(function(){
+      $('.img-holder a img').hover(function() {
+          var imgPath = $(this).attr('src');
+          //alert(imgPath);
+          $(this).attr('data-featherlight', imgPath);
+     });
+});
 //    smooth scrolling
 $('a[href^=#]').on("click",function(){
     var t= $(this.hash);

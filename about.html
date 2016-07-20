@@ -36,5 +36,65 @@
                    <h1>About Page</h1>
               </div>
           </div>
-     </body>
-</html>
+          <script type='text/javascript' src="js/jquery.min.js"></script>
+          <!-- Latest compiled and minified JavaScript -->
+          <script src="js/bootstrap.min.js"></script>
+
+          <!--<script type='text/javascript' src="js/bootstrap.min.js"></script>-->
+          <!-- <script src="js/umd/tether.min.js"></script>Tether for Bootstrap -->
+          <!-- <script type='text/javascript' src="js/umd/featherlight.gallery.js"></script> -->
+          <script type='text/javascript' src="js/umd/featherlight.js"></script>
+          <script type='text/javascript' src="js/umd/slick.js"></script>
+          <script type='text/javascript' src="js/umd/nanobar.min.js"></script>
+          <script type='text/javascript' src="js/custom.js"></script>
+          <script>
+                 var simplebar = new Nanobar();
+                 simplebar.go(100);
+          var colorbar = new Nanobar({target: document.getElementById('color')});
+                 colorbar.go(100);
+          var centeredbar = new Nanobar({target: document.getElementById('centered')});
+                 centeredbar.go(100);
+           </script>
+          <!-- JavaScript jQuery code from Bootply.com editor  -->
+          <script type='text/javascript'>
+
+
+             $(".slider").slick({
+                  lazyLoad: 'ondemand',
+                  dots: true,
+                  infinite: true,
+                  speed: 500,
+                  //fade: true,
+                  //cssEase: 'linear',
+                  autoplay: true,
+                  //dots: true,
+                  responsive: [{
+                      breakpoint: 500,
+                      settings: {
+                         dots: false,
+                         arrows: false,
+                         infinite: false,
+                         slidesToShow: 1,
+                         slidesToScroll: 1
+                      }
+                  }]
+             });
+
+          $(document).ready(function() {
+          });
+          </script>
+          <script type="text/javascript">
+
+
+          //$('#about-page').on('click', function(){
+
+          //});
+          // $(document).ready(function(){
+          $('#about-page').on('click', function(){
+             $(".page-display").empty();
+             $(".page-display").load("about.html");
+          });
+          // });
+          </script>
+          </body>
+          </html>
