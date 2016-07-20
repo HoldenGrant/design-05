@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-
-    </head>
+<?php include('parts/header.php') ?>
+    <!-- HTML code from Bootply.com editor -->
     <body>
         <!-- translusent top bar -->
         <div class="brand-logo">
@@ -54,7 +51,7 @@
         <!-- slider end -->
         <!-- nav start -->
         <section class="main-menu-container" id="startchange">
-
+            <?php include('parts/nav.php'); ?>
         </section>
         <!-- nav end -->
 
@@ -161,7 +158,6 @@
         <script type='text/javascript' src="js/umd/featherlight.js"></script>
         <script type='text/javascript' src="js/umd/slick.js"></script>
         <script type='text/javascript' src="js/umd/nanobar.min.js"></script>
-        <script type='text/javascript' src="js/custom.js"></script>
         <script>
 			var simplebar = new Nanobar();
 			simplebar.go(100);
@@ -208,14 +204,42 @@
                });
         });
 
+     //    smooth scrolling
+     $('a[href^=#]').on("click",function(){
+         var t= $(this.hash);
+         var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
+         if(t.length){
+             var tOffset=t.offset().top;
+             $('html,body').animate({scrollTop:tOffset-20},'slow');
+             return false;
+         }
+     });
 
+    // change on scroll
+    $(document).ready(function(){
+        var scroll_start = 0;
+        var startchange = $('#startchange');
+        var offset = startchange.offset();
+        if (startchange.length){
+            $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                    $(".main-menu-container").addClass('top-menu-container');
+                    $('.navbar-default .navbar-brand').css('display', 'block');
+                } else {
+                    $(".main-menu-container").removeClass('top-menu-container');
+                    $('.navbar-default .navbar-brand').css('display', 'none');
 
+                }
+            });
+        }
 
+        //$('.samp').load('about.html');
+    });
 
     //$('#about-page').on('click', function(){
 
     //});
-
     // $(document).ready(function(){
         $('#about-page').on('click', function(){
             $(".page-display").empty();
