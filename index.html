@@ -129,7 +129,7 @@
             <div class="samp">
 
             </div>
-            <div class="row">
+            <div class="row page-display">
                  <div class="col-sm-3 col-xs-12">
                       <h1>Cat. Title</h1>
                  </div>
@@ -299,7 +299,8 @@
     //});
     // $(document).ready(function(){
         $('#about-page').on('click', function(){
-            $(".samp").load("about.html");
+            $(".page-display").empty();
+            $(".page-display").load("about.html");
         });
     // });
         </script>
