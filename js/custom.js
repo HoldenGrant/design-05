@@ -27,3 +27,8 @@ $(document).ready(function(){
        });
     }
 });
+$(document).ready(function(){
+//     nav
+$('.main-menu-container').load('parts/nav.html');
+$('head').load('parts/header.html');
+});
