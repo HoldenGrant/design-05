@@ -78,6 +78,9 @@ a.go-down-btn.btn {
     width: 100%;
     z-index: 2;
 }
+.about-me .main-menu-container{
+     margin-top: 0;
+}
 .top-menu-container{
     position: fixed;
     margin-top: 0;
