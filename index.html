@@ -94,9 +94,9 @@
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">About Me</a></li>
-                                <li><a href="#">Contact Me</a></li>
+                                <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#about-page">About Me</a></li>
+                                <li><a href="#contact-page">Contact Me</a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right hidden-lg hidden-md hidden-sm">
                                 <li class="active"><a href="#">photography <span class="sr-only">(current)</span></a></li>
@@ -126,6 +126,9 @@
             </div>
             <h1>Masonry CSS</h1>
             <h6>images from unsplash.com</h6>
+            <div class="samp">
+
+            </div>
             <div class="row">
                  <div class="col-sm-3 col-xs-12">
                       <h1>Cat. Title</h1>
@@ -287,6 +290,17 @@
                 }
             });
         }
+
+        $('.samp').load('about.html');
+    });
+
+    //$('#about-page').on('click', function(){
+
+    //});
+    $(document).ready(function(){
+        $('#about-page').on('click', function(){
+            $(".samp").load("index.html");
+        });
     });
         </script>
     </body>
