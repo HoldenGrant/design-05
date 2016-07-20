@@ -78,6 +78,9 @@ a.go-down-btn.btn {
     width: 100%;
     z-index: 2;
 }
+.about-me .navbar-default .navbar-brand{
+     display: block;
+}
 .about-me .main-menu-container{
      margin-top: 0;
 }
