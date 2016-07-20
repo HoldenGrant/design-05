@@ -1,4 +1,33 @@
-<?php include('parts/header.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Design - 05</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Design-05 using bootstrap masonry" />
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+        <!-- Optional theme -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+        <link href="css/featherlight.css" rel="stylesheet">
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/slick-theme.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/media.css" rel="stylesheet">
+        <!-- <link href="css/tether.min.css" rel="stylesheet"> -->
+        <!-- <link href="css/featherlight.gallery.css" rel="stylesheet"> -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+    </head>
     <!-- HTML code from Bootply.com editor -->
     <body>
         <!-- translusent top bar -->
@@ -51,7 +80,35 @@
         <!-- slider end -->
         <!-- nav start -->
         <section class="main-menu-container" id="startchange">
-            <?php include('parts/nav.php'); ?>
+            <div class="container holden-menu">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        <a class="navbar-brand" href="#">Project name</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+                                <li><a id="about-page">About Me</a></li>
+                                <li><a href="#contact-page">Contact Me</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right hidden-lg hidden-md hidden-sm">
+                                <li class="active"><a href="#">photography <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">digital</a></li>
+                                <li><a href="#">traditional</a></li>
+                                <li><a href="#">sketch</a></li>
+                                <li><a href="#">mural</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </section>
         <!-- nav end -->
 
