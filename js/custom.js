@@ -1,3 +1,24 @@
+// slider
+$(".slider").slick({
+     lazyLoad: 'ondemand',
+     dots: true,
+     infinite: true,
+     speed: 500,
+     //fade: true,
+     //cssEase: 'linear',
+     autoplay: true,
+     //dots: true,
+     responsive: [{
+         breakpoint: 500,
+         settings: {
+            dots: false,
+            arrows: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+         }
+     }]
+});
 //featherlight
 $(document).ready(function(){
       $('.img-holder a img').hover(function() {
