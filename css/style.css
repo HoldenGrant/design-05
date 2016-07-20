@@ -84,6 +84,13 @@ a.go-down-btn.btn {
 .about-me .main-menu-container{
      margin-top: 0;
 }
+.about-me-image img {
+    width: 202px;
+    height: 202px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
 .top-menu-container{
     position: fixed;
     margin-top: 0;
