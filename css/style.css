@@ -193,8 +193,11 @@ ul.social-footer li {
 
 ul.social-footer li a {
     font-size: 20px;
+    color: gray;
 }
-
+ul.social-footer li a:hover {
+    color:cornflowerblue;
+}
 ul.social-footer li a i {
     box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.45);
 }
