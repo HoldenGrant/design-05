@@ -179,3 +179,23 @@ ul.cat-menu li {
     margin: 0 auto;
 }
 /* about page end */
+
+/* footer start */
+ul.social-footer {
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-footer li {
+    display: inline-block;
+    padding: 3px;
+}
+
+ul.social-footer li a {
+    font-size: 20px;
+}
+
+ul.social-footer li a i {
+    box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.45);
+}
+/* footer end */
