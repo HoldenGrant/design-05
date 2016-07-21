@@ -12,8 +12,14 @@ body{
     /*border-top: 5px solid #8c7669;*/
 }
 /* reusable start */
+.grow-hover{
+    transition: .2s;
+}
 .grow-hover:hover{
     transform: scale(1.5);
+}
+.soft-black-on-hover:hover{
+    box-shadow: 0px 0px 20px -3px black;
 }
 /* reusable  */
 
