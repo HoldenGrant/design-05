@@ -180,6 +180,7 @@ ul.cat-menu li {
 }
 .work-samples{
     padding-top: 20px;
+    position: relative;
 }
 .work-samples .row {
     padding: 0 15px;
