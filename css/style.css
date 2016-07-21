@@ -11,6 +11,12 @@ html, body{
 body{
     /*border-top: 5px solid #8c7669;*/
 }
+/* reusable start */
+.grow-hover:hover{
+    transform: scale(1.5);
+}
+/* reusable  */
+
 /* translusent top bar start */
 .site-intro {
     display: table-cell;
@@ -77,19 +83,6 @@ a.go-down-btn.btn {
     margin-top: -51px;
     width: 100%;
     z-index: 2;
-}
-.about-me .navbar-default .navbar-brand{
-     display: block;
-}
-.about-me .main-menu-container{
-     margin-top: 0;
-}
-.about-me-image img {
-    width: 202px;
-    height: 202px;
-    border-radius: 100%;
-    overflow: hidden;
-    margin: 0 auto;
 }
 .top-menu-container{
     position: fixed;
@@ -164,3 +157,19 @@ ul.cat-menu li {
     padding: 5px 10px;
 }
 /* cat menu end */
+
+/* about page start */
+.about-me .navbar-default .navbar-brand{
+     display: block;
+}
+.about-me .main-menu-container{
+     margin-top: 0;
+}
+.about-me-image img {
+    width: 202px;
+    height: 202px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+/* about page end */
