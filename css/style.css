@@ -166,7 +166,7 @@ ul.cat-menu li {
 
 /* about page start */
 .about-me .navbar-default .navbar-brand{
-     display: block;
+     display: block !important;
 }
 .about-me .main-menu-container{
      margin-top: 0;
