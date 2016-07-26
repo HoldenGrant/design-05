@@ -52,7 +52,7 @@ body{
     float: left;
     text-align: left;
     width: 100%;
-    line-height: 1px;
+    line-height: 1;
 }
 .sub-intro-text p {
     text-align: left;
