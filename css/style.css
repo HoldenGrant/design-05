@@ -16,7 +16,7 @@ body{ /*border-top: 5px solid #8c7669;*/ }
 .brand-logo .top-site-name a { padding-left: 30px; font-size: 22px; color: white; text-decoration: none; }
 /* translusent top bar end */
 /* banner text start */
-.site-intro .collg12 .intro-text { font-size: 10em; color: white; float: left; text-align: left; width: 100%;line-height: 1;}
+.site-intro .collg12 .intro-text { font-size: 10em; color: white; float: left; text-align: left; width: 100%; }
 .sub-intro-text p { text-align: left; font-size: 18px; color: white; }
 .sub-intro-text { display: inline-block; }
 .go-down-btn { border: 2px solid white; border-radius: 100%; width: 86px; transition: .2s; }
