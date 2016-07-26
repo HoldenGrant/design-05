@@ -1,0 +1,178 @@
+*, *:before, *:after {box-sizing:  border-box !important;}
+.row { -moz-column-width: 20em; -webkit-column-width: 20em; -moz-column-gap: 4px; -webkit-column-gap:4px; }
+.row > .img-holder { display: inline-block; padding: 0; margin: 0; width:  100%; float:none; }
+.img-responsive { border:0px solid #999; width: 100%; }
+html, body{ width: 100%; height: 100%; position: relative; z-index: 0; }
+body{ /*border-top: 5px solid #8c7669;*/ }
+/* reusable start */
+.grow-hover{ transition: .2s; }
+.grow-hover:hover{ transform: scale(1.2); }
+.soft-black-on-hover:hover{ box-shadow: 0px 0px 20px -3px black; }
+/* reusable  */
+
+/* translusent top bar start */
+.site-intro { display: table-cell; vertical-align: middle; text-align: center; }
+.brand-logo { position: absolute; z-index: 2; width: 100%; height: 50px; padding: 10px 0; /*text-align: center;*/ background: rgba(0, 0, 0, 0.18); }
+.brand-logo .top-site-name a { padding-left: 30px; font-size: 22px; color: white; text-decoration: none; }
+/* translusent top bar end */
+/* banner text start */
+.site-intro .collg12 .intro-text { font-size: 10em; color: white; float: left; text-align: left; width: 100%; }
+.sub-intro-text p { text-align: left; font-size: 18px; color: white; }
+.sub-intro-text { display: inline-block; }
+.go-down-btn { border: 2px solid white; border-radius: 100%; width: 86px; transition: .2s; }
+a.go-down-btn.btn:hover { color: cornflowerblue; background: white; box-shadow: 0px 1px 16px 7px white; transform: scale(1.1); }
+a.go-down-btn.btn { color: white; }
+/* banner text end */
+/* menu start */
+.holden-menu {
+    /*margin-top: -51px;*/
+}
+.main-menu-container {
+    border-top: 1px solid rgba(0, 0, 0, 0.18);
+    position: relative;
+    background: white;
+    margin-top: -51px;
+    width: 100%;
+    z-index: 2;
+}
+.top-menu-container{
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    z-index: 2;
+    box-shadow: 1px 1px 15px 3px rgba(16, 16, 16, 0.71);
+}
+.main-menu-container .holden-menu .navbar {
+    margin-bottom: 0;
+    border-radius: 0px;
+    background: white;
+}
+.main-menu-container .holden-menu .navbar-default {
+    border-color: transparent;
+}
+.navbar-default .navbar-brand {
+    display: none;
+}
+.show-project-name{
+     display: block;
+}
+/* menu end */
+/* slider start */
+.site-details-on-slider {
+    position: absolute;
+    z-index: 1;
+    /* top: 0; */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.33);
+}
+.slider{
+    /*border-top: 5px solid #8c7669;*/
+    position: relative;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    /*position: relative;*/
+    overflow: hidden;
+}
+.slider .slick-slide img{
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+     transform: scale(1);
+     -ms-transform-origin: center;
+     -webkit-transform-origin: center;
+     -moz-transform-origin: center;
+    transform-origin: center;
+    /*height: 100%;*/
+}
+.slider .slick-list, .slider .slick-list .slick-track{
+     height: 100%;
+}
+.slider.slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
+/* slider end */
+/* cat menu start */
+.cat-menu {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+.cat-menu-container {
+    padding-top: 50px;
+}
+ul.cat-menu li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+/* cat menu end */
+
+/* about page start */
+.about-me .navbar-default .navbar-brand{
+     display: block !important;
+}
+.about-me .main-menu-container{
+     margin-top: 0;
+}
+.about-me-image img {
+    width: 202px;
+    height: 202px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.work-samples{
+    padding-top: 20px;
+    position: relative;
+}
+.work-samples .row {
+    padding: 0 15px;
+}
+.work-sample-overlay {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+48,ffffff+100&0+0,1+90,1+100 */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.01) 1%, rgba(255,255,255,0.53) 48%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,0.53) 48%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,0.53) 48%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    /*background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.01) 1%, rgba(255,255,255,0.45) 45%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,0.45) 45%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,0.45) 45%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );*/
+}
+/* about page end */
+
+/* footer start */
+footer {
+    border-top: 1px solid #e8e8e8;
+    box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.17);
+    margin-top: 15px;
+}
+ul.social-footer {
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-footer li {
+    display: inline-block;
+    padding: 3px;
+}
+
+ul.social-footer li a {
+    font-size: 20px;
+    color: gray;
+}
+ul.social-footer li a:hover {
+    color:cornflowerblue;
+}
+ul.social-footer li a i {
+    box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.45);
+}
+/* footer end */
