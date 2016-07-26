@@ -52,6 +52,7 @@ body{
     float: left;
     text-align: left;
     width: 100%;
+    line-height: 1px;
 }
 .sub-intro-text p {
     text-align: left;
@@ -59,8 +60,7 @@ body{
     color: white;
 }
 .sub-intro-text {
-    display: block;
-    padding-bottom: 30px;
+    display: inline-block;
 }
 .go-down-btn {
     border: 2px solid white;
