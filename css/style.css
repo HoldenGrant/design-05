@@ -37,7 +37,7 @@ a.go-down-btn.btn { color: white; }
 /* banner text end */
 /* menu start */
 .holden-menu { /*margin-top: -51px;*/ }
-.main-menu-container { border-top: 1px solid rgba(0, 0, 0, 0.18); position: relative; background: white; margin-top: -51px; width: 100%; z-index: 2; }
+.main-menu-container { border-top: 1px solid rgba(0, 0, 0, 0.18); position: relative; background: white; margin-top: -51px; width: 100%; z-index: 2;padding: 0; }
 .top-menu-container{ position: fixed; margin-top: 0; top: 0; z-index: 2; box-shadow: 1px 1px 15px 3px rgba(16, 16, 16, 0.71); }
 .main-menu-container .holden-menu .navbar { margin-bottom: 0; border-radius: 0px; background: white; }
 .main-menu-container .holden-menu .navbar-default { border-color: transparent; }
