@@ -90,7 +90,7 @@ ul.cat-menu li { display: inline-block; padding: 5px 10px; }
     height: auto;
     /* border-radius: 0; */
 }
-
+ 
 .input-box input, .input-box textarea,.input-box button {
     border-radius: 2px;
 }
