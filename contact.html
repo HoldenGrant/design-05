@@ -42,20 +42,21 @@
                            <form class="holden-contact" action="index.html" method="post">
                                <div class="clearfix input-box">
                                    <label for="name" class="">Name :</label>
-                                   <input type="text" name="name" value="" class="form-control" required>
+                                   <input type="text" name="name" value="" class="form-control write-here" required>
                                </div>
                                <div class="clearfix input-box">
                                    <label for="email" class="">Email :</label>
-                                   <input type="email" name="name" value="" class="form-control" required>
+                                   <input type="email" name="name" value="" class="form-control write-here" required>
                                </div>
                                <div class="clearfix input-box">
                                    <label for="message" class="">Message :</label>
-                                   <textarea name="name" rows="8" cols="40" class="form-control" required></textarea>
+                                   <textarea name="name" rows="8" cols="40" class="form-control write-here" required></textarea>
                                </div>
                                <div class="clearfix input-box">
                                    <button type="submit" name="name" value="" class="btn form-control">
                                        Send <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                    </button>
+                                   &#xf1d8;
                                </div>
                            </form>
                        </div>
@@ -110,10 +111,13 @@
           <script type='text/javascript' src="js/custom.js"></script>
           <script type="text/javascript">
               $(document).ready(function(){
-                  $('.input-box label').mouseover(function(){
+                  $('.input-box').mouseover(function(){
                       //alert("sample");
-                      $(this).addClass("small-label");
-                      $(this + 'input').focus();
+                      $(this).find('label').addClass("small-label");
+                      $(this).find('.write-here').focus().addClass("write-padding-zero");
+                  }).mouseleave(function(){
+                      $(this).find('label').removeClass("small-label");
+                      $(this).find('.write-here').removeClass("write-padding-zero");
                   });
               });
           </script>

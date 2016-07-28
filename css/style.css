@@ -89,23 +89,30 @@ ul.cat-menu li { display: inline-block; padding: 5px 10px; }
     transition: .2s;
     /* vertical-align: middle; */
 }
-
-.input-box input,.input-box textarea {
-    padding: 15px 10px 5px;
+.input-box .write-here{
     height: auto;
-    /* border-radius: 0; */
+    transition: .2s;
 }
-
-.input-box input, .input-box textarea,.input-box button {
+.input-box input.write-here {
+    padding: 15px 60px 5px;
+}
+.input-box textarea.write-here {
+    padding: 15px 90px 5px;
+}
+.input-box input, .input-box textarea, .input-box button {
     border-radius: 2px;
+}
+.write-padding-zero{
+    padding-left: 10px !important;
 }
 .small-label {
     height: auto !important;
     padding: 3px 10px !important;
-    width: auto !important;
+    /*width: auto !important;*/
     color: cornflowerblue !important;
     font-size: 12px !important;
 }
+.input-box input, .input-box textarea
 .input-box label:hover {
     cursor: pointer;
 }
