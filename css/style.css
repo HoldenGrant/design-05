@@ -72,6 +72,10 @@ ul.cat-menu li { display: inline-block; padding: 5px 10px; }
     background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,0.53) 48%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
+.work-samples-about-samples {
+    padding-bottom: 0;
+    background-color: cornflowerblue;
+}
 /* about page end */
 /* contact page start */
 ul.contact-options {
@@ -153,7 +157,8 @@ ul.contact-options li a:hover {
 footer {
     border-top: 1px solid #e8e8e8;
     box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.17);
-    /*margin-top: 15px;*/
+    position: relative;
+    z-index: 1;
 }
 ul.social-footer {
     list-style: none;
