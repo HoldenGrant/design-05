@@ -65,7 +65,24 @@ $(document).ready(function(){
     }
 });
 $(document).ready(function(){
-//     nav
-$('.main-menu-container').load('parts/nav.html');
-//$('head').load('parts/header.html');
+    //     nav
+    $('.main-menu-container').load('parts/nav.html');
+    //$('head').load('parts/header.html');
+});
+$(document).ready(function(){
+    // for contact page
+    $('.input-box').mouseover(function(){
+        //alert("sample");
+        $(this).find('label').addClass("small-label");
+        $(this).find('.write-here').focus().addClass("write-padding-zero");
+    }).mouseleave(function(){
+        $(this).find('label').removeClass("small-label");
+        $(this).find('.write-here').removeClass("write-padding-zero");
+        //$(this).find('.write-here').blur().removeClass("write-padding-zero");
+    });
+
+    // lazy load images in home page
+    $(function() {
+        $('.lazy').lazy();
+    });
 });
