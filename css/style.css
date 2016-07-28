@@ -92,9 +92,11 @@ ul.contact-options li a{
     font-size: 3em;
     padding: 5px 10px;
     color: cornflowerblue;
+    transition: .1s;
 }
 ul.contact-options li a:hover {
     color: crimson;
+    transform: scale(1.3);
 }
 .input-box {
     position: relative;
