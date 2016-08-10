@@ -82,6 +82,12 @@ ul.cat-menu li { display: inline-block; padding: 5px 10px; }
     padding-bottom: 0;
     background-color: cornflowerblue;
 }
+.work-sample-overlay .btn-container {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 /* about page end */
 /* contact page start */
 ul.contact-options {
