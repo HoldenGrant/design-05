@@ -16,7 +16,7 @@ body{ /*border-top: 5px solid #8c7669;*/ }
 .soft-black-on-hover:hover{ box-shadow: 0px 0px 20px -3px black; }
 .crimson{background-color: crimson;}
 .btn-cremson {
-    background-color: : crimson;
+    background-color:crimson;
     transition: .3s;
     /* height: 150px; */
     color: white;
