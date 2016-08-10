@@ -22,7 +22,7 @@ body{ /*border-top: 5px solid #8c7669;*/ }
     color: white;
     /* box-shadow: 1px 1px 1px 1px black; */
 }
-.btn-cremson:hover {
+.btn-cremson:hover, a.btn-cremson:focus {
     transform: scale(1.2);
     box-shadow: 0px 0px 20px -3px black;
 }
