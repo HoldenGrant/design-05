@@ -14,7 +14,7 @@ $(".slider").slick({
      speed: 500,
      //fade: true,
      //cssEase: 'linear',
-     autoplay: true,
+     autoplay: false,
      //dots: true,
      responsive: [{
          breakpoint: 500,
